@@ -11,4 +11,15 @@ export default defineConfig({
       "@": resolve(__dirname, "src"),
     },
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        notfound: '404.html'
+      },
+      output: {
+        entryFileNames: '[name].html'
+      }
+    }
+  }
 })
