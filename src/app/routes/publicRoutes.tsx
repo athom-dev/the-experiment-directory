@@ -2,11 +2,11 @@ import Layout from "@/app/layout"
 import Article from "@/features/article"
 const publicRoutes = [
   {
-    path: "/",
+    path: "/the-experiment-directory/",
     element: <Layout/>,
     children: [
       {
-        path: "/article/:id",
+        path: "/the-experiment-directory/article/:id",
         element: <Article />
       }
     ]

@@ -7,7 +7,7 @@ export function ArticleHeader({id}:{id:any}) {
 
   useEffect(() => {
     if (!id) return
-    fetch(`/articles/${id}/manifest.json`)
+    fetch(`/the-experiment-directory/articles/${id}/manifest.json`)
       .then((response) => response.json())
       .then( (data) => {
         setJson(data)
@@ -27,7 +27,7 @@ export function ArticleContent({id}:{id:any}) {
 
   useEffect(() => {
     if (!id) return
-    fetch(`/articles/${id}/index.md`)
+    fetch(`/the-experiment-directory/articles/${id}/index.md`)
       .then(res => {
         const type = res.headers.get("content-type")
         if (!type || !type.includes("text/markdown")) {
