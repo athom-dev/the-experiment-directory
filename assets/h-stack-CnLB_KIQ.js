@@ -1,1 +1,0 @@
-import{N as e,P as t,j as n,s as r}from"./main-Dx_Bhl9c.js";var{floor:i,abs:a,round:o,min:s,max:c,pow:l,sign:u}=Math,d=e=>Number.isNaN(e),f=e=>d(e)?0:e,p=(e,t,n)=>s(c(f(e),t),n),m=e=>typeof e==`number`?`${e}px`:e,h=n(),g=(0,t(e(),1).forwardRef)(function(e,t){return(0,h.jsx)(r,{align:`center`,...e,direction:`row`,ref:t})});g.displayName=`HStack`;export{p as n,m as r,g as t};
