@@ -1,5 +1,5 @@
 import Main from "@/components/Main";
-import { AbsoluteCenter, Box, Container, Image, Stack } from "@chakra-ui/react";
+import { AbsoluteCenter, Box, Container, Image } from "@chakra-ui/react";
 import { Outlet } from "react-router";
 
 export default function IndexLayout() {
