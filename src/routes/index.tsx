@@ -1,6 +1,7 @@
 import { indexRoutes } from "@/features/index/routes";
 import { solversRoutes } from "@/features/solvers/routes";
-import AppLayout from "@/layout";
+import { lazy } from "react";
+const AppLayout = lazy(() => import("@/layout"));
 import { useRoutes } from "react-router";
 
 const appRoutes = [

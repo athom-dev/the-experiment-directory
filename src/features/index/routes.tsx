@@ -1,6 +1,10 @@
+import { lazy } from "react";
 import IndexLayout from "./layout";
-import HomePage from "./pages";
-import UpdatesAndAdditionsPage from "./pages/updates-and-additions";
+
+const HomePage = lazy(() => import("./pages"));
+const UpdatesAndAdditionsPage = lazy(
+  () => import("./pages/updates-and-additions"),
+);
 
 export const indexRoutes = [
   {

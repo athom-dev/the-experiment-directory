@@ -73,7 +73,7 @@ export default function TrialsLockdownKeys() {
         <Stack>
           <Heading size="sm">Result</Heading>
           <HStack mb={4}>
-            {colorSequenceState.split("").map((e, index) => {
+            {colorSequenceState.split("").map((e) => {
               const color = colors[e];
 
               if (!color)
