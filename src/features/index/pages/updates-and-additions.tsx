@@ -85,7 +85,7 @@ export default function ChangelogPage() {
 
 const logs: Record<string, Log> = {
   "0.1.0": {
-    date: 1794728316713,
+    date: 1794867424112,
     description:
       "The directory has just been updated to a better visual and code optimization! Check below what's new:",
     changes: [
