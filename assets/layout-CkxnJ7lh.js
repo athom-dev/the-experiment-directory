@@ -1,0 +1,1 @@
+import{j as e,o as t,r as n,t as r}from"./main-Dx_Bhl9c.js";var i=e();function a(){return(0,i.jsx)(r,{children:(0,i.jsx)(t,{maxW:`4xl`,children:(0,i.jsx)(n,{})})})}export{a as default};
