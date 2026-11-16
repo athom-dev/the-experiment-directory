@@ -1,0 +1,52 @@
+{
+  "categories": [],
+  "solvers": [
+    {
+      "label": "Trials: Lockdown Keys",
+      "to": "/solvers/trials-lockdown-keys",
+      "enabled": true
+    },
+    {
+      "label": "Letter-to-Number Encoding",
+      "to": "/solvers/letter-to-number-encoding",
+      "enabled": false
+    },
+
+    {
+      "label": "Timeless: Grid Puzzle",
+      "to": "/solvers/timeless-grid-puzzle",
+      "enabled": false
+    },
+    {
+      "label": "Timeless: Math Puzzle",
+      "to": "/solvers/timeless-math-puzzle",
+      "enabled": false
+    },
+    {
+      "label": "Timeless: Chess Puzzle",
+      "to": "/solvers/timeless-chess-puzzle",
+      "enabled": false
+    },
+    {
+      "label": "Timeless: XOR Gates",
+      "to": "/solvers/timeless-xor-gates",
+      "enabled": false
+    },
+    {
+      "label": "Timeless: Energy Container",
+      "to": "/solvers/timeless-energy-container",
+      "enabled": false
+    },
+    {
+      "label": "Service Shaft Encoding",
+      "to": "/solvers/service-shaft-encoding",
+      "enabled": false
+    },
+    {
+      "label": "Unknown Signal",
+      "to": "/solvers/unknown-signal",
+      "enabled": false
+    }
+  ],
+  "articles": []
+}
