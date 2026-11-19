@@ -1,1 +1,0 @@
-import{_ as e}from"./main-Bk7FvP_N.js";var{withContext:t,PropsProvider:n}=e({key:`heading`}),r=t(`h2`),{withContext:i,PropsProvider:a}=e({key:`text`}),o=i(`p`);export{r as n,o as t};

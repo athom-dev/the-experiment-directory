@@ -1,0 +1,1 @@
+import{c as e,i as t,t as n,z as r}from"./main-vGSFINEY.js";var i=r();function a(){return(0,i.jsx)(n,{children:(0,i.jsx)(e,{maxW:`4xl`,children:(0,i.jsx)(t,{})})})}export{a as default};

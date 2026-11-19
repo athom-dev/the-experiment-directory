@@ -1,0 +1,1 @@
+function e(e,t){return Array.from(e?.querySelectorAll(t)??[])}function t(e,t){return e?.querySelector(t)??null}export{e as n,t};

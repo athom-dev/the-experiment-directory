@@ -1,0 +1,1 @@
+var{floor:e,abs:t,round:n,min:r,max:i,pow:a,sign:o}=Math,s=e=>Number.isNaN(e),c=e=>s(e)?0:e,l=(e,t,n)=>r(i(c(e),t),n),u=e=>typeof e==`number`?`${e}px`:e;export{u as n,l as t};
