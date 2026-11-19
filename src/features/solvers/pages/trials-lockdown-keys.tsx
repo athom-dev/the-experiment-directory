@@ -22,7 +22,7 @@ export default function TrialsLockdownKeys() {
   }, [number, letterSequence]);
 
   return (
-    <>
+    <Stack gap={4}>
       <Stack gap={4}>
         <Heading>Trials: Lockdown Keys</Heading>
         <RadioCard.Root
@@ -69,38 +69,33 @@ export default function TrialsLockdownKeys() {
             })}
           </HStack>
         </RadioCard.Root>
+      </Stack>
 
-        <Stack>
-          <Heading size="sm">Result</Heading>
-          <HStack mb={4}>
-            {colorSequenceState.split("").map((e) => {
-              const color = colors[e];
+      <Stack>
+        <Heading>Result</Heading>
+        <HStack>
+          {colorSequenceState.split("").map((e) => {
+            const color = colors[e];
 
-              if (!color)
-                return (
-                  <ColorBox
-                    title="Null"
-                    id="0"
-                    bg="transparent"
-                    color="white"
-                  />
-                );
-
+            if (!color)
               return (
-                <ColorBox
-                  title={color.title}
-                  id={e}
-                  bg={color.hex}
-                  color="black"
-                />
+                <ColorBox title="Null" id="0" bg="transparent" color="white" />
               );
-            })}
-          </HStack>
-        </Stack>
+
+            return (
+              <ColorBox
+                title={color.title}
+                id={e}
+                bg={color.hex}
+                color="black"
+              />
+            );
+          })}
+        </HStack>
       </Stack>
 
       <Stack mt={2}>
-        <Heading>Purpose & Usage</Heading>
+        <Heading>Purpose & Instructions</Heading>
         <Text fontSize="sm">
           This tool was designed for Event No. 76, lockdown (first) variation,
           specifically for the left panel of the room.
@@ -113,7 +108,7 @@ export default function TrialsLockdownKeys() {
           There are no other usages for this tool.
         </Text>
       </Stack>
-    </>
+    </Stack>
   );
 }
 

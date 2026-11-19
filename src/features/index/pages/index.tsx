@@ -1,9 +1,11 @@
 import { Text, Heading, Stack } from "@chakra-ui/react";
+import SolversSearch from "../components/SolversSearch";
 
 export default function HomePage() {
   return (
     <>
       <Stack gap={8}>
+        <SolversSearch />
         <Stack>
           <Heading>Greetings, player!</Heading>
           <Text color="fg.muted" fontSize="sm">

@@ -3,9 +3,9 @@ import { Heading, List, Text, Stack, Box } from "@chakra-ui/react";
 
 interface Log {
   date: number;
-  description: string;
+  description?: string;
   changes?: Array<string>;
-  footer: string;
+  footer?: string;
 }
 
 const months = [
@@ -51,9 +51,11 @@ function Log({ data, version }: { data: Log; version: string }) {
           v{version} release
         </Heading>
       </Box>
-      <Text mb={4} fontSize="sm">
-        {data.description}
-      </Text>
+      {data.description && (
+        <Text mb={4} fontSize="sm">
+          {data.description}
+        </Text>
+      )}
       {data.changes && (
         <List.Root gap={0.5} fontSize="sm" color="fg.muted" ps={5}>
           {data.changes.map((change) => (
@@ -84,10 +86,19 @@ export default function ChangelogPage() {
 }
 
 const logs: Record<string, Log> = {
+  "0.1.1": {
+    date: 1795075843844,
+    description: "These are the recent updates and changes to directory:",
+    changes: [
+      "Added a search for solvers component at the home page.",
+      'Reviewed and unarchived "Unknown Signal" solver.',
+      "Minor bug fixes and changes.",
+    ],
+  },
   "0.1.0": {
     date: 1794867424112,
     description:
-      "The directory has just been updated to a better visual and code optimization! Check below what's new:",
+      "Initial version of The Experiment Directory. The project finds itself back active after around two weeks inactive, and returnt with visuals and performance optimizations:",
     changes: [
       "New pattern & value to the version counter.",
       "New layout for proper user experience and design.",

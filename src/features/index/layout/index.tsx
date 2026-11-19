@@ -11,14 +11,14 @@ export default function IndexLayout() {
         bgSize="cover"
         flexShrink={0}
         bgPos="center"
-        height="12.5rem"
+        height="40vh"
         position="relative"
         overflow="hidden"
       >
         <Box
           position="absolute"
           bottom="0"
-          height="500%"
+          height="400%"
           width="100%"
           bgImage="linear-gradient(transparent, var(--chakra-colors-bg))"
         ></Box>

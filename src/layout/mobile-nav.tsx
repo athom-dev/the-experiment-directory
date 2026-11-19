@@ -35,7 +35,7 @@ export default function MobileNav() {
       >
         <HStack>
           <Drawer.Trigger asChild>
-            <IconButton variant="plain">
+            <IconButton size="2xl" variant="subtle" rounded="0">
               <Menu />
             </IconButton>
           </Drawer.Trigger>

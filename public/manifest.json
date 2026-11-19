@@ -45,7 +45,7 @@
     {
       "label": "Unknown Signal",
       "to": "/solvers/unknown-signal",
-      "enabled": false
+      "enabled": true
     }
   ],
   "articles": []
