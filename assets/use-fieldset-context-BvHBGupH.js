@@ -1,0 +1,1 @@
+import{G as e}from"./create-slot-recipe-context-BqerwnNF.js";var[t,n]=e({name:`FieldsetContext`,hookName:`useFieldsetContext`,providerName:`<FieldsetProvider />`,strict:!1});export{n as t};
