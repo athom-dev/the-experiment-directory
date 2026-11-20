@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 // Sem a barra extra, pois BASE_URL já inclui '/' no final
-const manifestFile = `${import.meta.env.BASE_URL}/manifest.json`;
+const manifestFile = `${import.meta.env.BASE_URL}/manifest.json?v=${Date.now()}`;
 
 // Dica: crie uma interface para o seu manifest em vez de usar 'any'
 interface ManifestData {
